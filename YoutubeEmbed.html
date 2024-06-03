@@ -1,0 +1,67 @@
+<html>
+<head> 
+  <title>YoutubeOVERRIDE🖖</title>
+  <script type="text/javascript">
+     function VidChange() {
+      let e = document.getElementById("myInput").value;
+	  let f = e.toString()
+      let splitted = f.slice(32, 43)
+	  var def = "https://www.youtube.com/embed/"
+	  var newSrc = def.concat(splitted)
+      document.getElementById("MyFrame").src=newSrc;
+     }
+	 function ListChange() {
+      let e = document.getElementById("myInput").value;
+	  let f = e.toString()
+      let splitted = f.slice(32)
+	  var def = "https://www.youtube.com/embed/videoseries"
+	  var newSrc = def.concat(splitted)
+      document.getElementById("MyFrame").src=newSrc;
+     }
+	 
+    </script>
+  <link rel="icon" type="image/x-icon" href="files/youtube.ico">
+<style>
+body {
+  background-color: black;
+  height: 100%;
+  color:white
+}
+input{
+color:white;
+background-color:black;
+height:100px;
+width:30%;
+font-size:50;
+}
+button {
+color:white;
+background-color:black;
+border-color:white;
+	width: 30%;
+	height: 100px;
+	font-size: 35;
+}
+a {
+color: white;
+font-size:35;
+</style>
+</head>
+<body>
+    <iframe id="MyFrame" width="99%" height="98%"
+   	src="https://www.youtube.com/embed/videoseries?list=PL1orhGztKx5B42KTgW1k9HF73Hly4X0Vi"
+     title="YouTube video player"
+     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+     </iframe>
+	 <p>
+	 <br/>
+	 </p>
+	 	<input type="text" onfocus="this.value=''" value="" id="myInput">
+    <button onClick="VidChange();"> Change Vid</button>
+    <button onClick="ListChange();"> Change Playlist</button>
+	<p></p>
+	<a href="https://www.youtube.com/feed/library"> Youtube Library </a>
+	
+
+ </body>
+ 
